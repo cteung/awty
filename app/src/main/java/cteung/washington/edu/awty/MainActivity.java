@@ -120,6 +120,7 @@ public class MainActivity extends ActionBarActivity {
 
         if(message & phone & freq){
             b.setEnabled(true);
+            b.setText("Start");
             alarmIntent.putExtra("message", m.getText().toString());
             alarmIntent.putExtra("phone", p.getText().toString());
         }else {
